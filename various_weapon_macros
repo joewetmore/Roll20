@@ -1,0 +1,37 @@
+Longsword
+!roll20AM --audio,play,nomenu|longsword
+
+Longbow or Shortbow
+!roll20AM --audio,play,nomenu|arrow
+
+Many Bows
+!roll20AM --audio,play,nomenu|arrowbarrage
+
+Maul
+!roll20AM --audio,play,nomenu|maul
+
+Shortsword
+!roll20AM --audio,play,nomenu|shortsword
+
+Dagger
+!roll20AM --audio,play,nomenu|dagger
+
+Dagger-thrown
+!roll20AM --audio,play,nomenu|daggerthrown
+
+Battleaxe
+!roll20AM --audio,play,nomenu|battleaxe
+
+Handaxe
+!roll20AM --audio,play,nomenu|handaxe
+
+
+Chaotic Arrow
+/fx burn-magic @{target|token_id}
+!roll20AM --audio,play,nomenu|arrow
+@{Eladrin Archer|wtype}&{template:npcfullatk} {{attack=1}} {{damage=1}} {{dmg1flag=1}} {{dmg2flag=1}}  @{Eladrin Archer|npc_name_flag} {{rname=Chaotic Arrow}} {{r1=[[@{Eladrin Archer|d20}+(6+0)]]}} @{Eladrin Archer|rtype}+(6+0)]]}} {{dmg1=[[1d8 + 4+0]]}} {{dmg1type=piercing}} {{dmg2=[[2d8+0]]}} {{dmg2type=[[1t[Chaos-Bolt]]]}} {{crit1=[[1d8+0]]}} {{crit2=[[2d8+0]]}} {{Modifier|1t[Random-Table-Effect-Type]}} {{description=The arrowhead carries with it a warbling mass of chaotic energy. On a hit, the target takes an additional 2d8 of a random damage type. 
+
+If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new ranged attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. If there is no target within 30' the bolt dissipates.
+}} @{Eladrin Archer|charname_output}
+
+
