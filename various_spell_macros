@@ -1,0 +1,69 @@
+Ray-of-Frost
+/fx beam-frost @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play,nomenu|iceblast
+
+Chaos-Bolt
+/fx beam-frost @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play,nomenu|arrow
+
+Mage-Armor
+!token-mod --on showplayers_aura1 --set aura1_radius|1 aura1_color|0000ff
+
+Magic-Missile
+/fx bomb-magic @{target|token_id}
+
+Thunderwave
+/fx explode-magic @{selected|token_id}
+!roll20AM --audio,play|thunderwave
+
+Flaming-sphere
+/fx burn-fire @{target|token_id}
+!roll20AM --audio,play|fireblast
+
+Ray-of-Enfeeblement
+/fx beam-death @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play|psi1
+
+Fireball
+/fx nova-fire @{target|token_id}
+!roll20AM --audio,play|fireblast
+
+Acidsplash
+/fx splatter-acid @{selected|token_id} @{target|Foe|token_id} 
+
+Ray-of-sickness
+/fx beam-slime @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play|psi1
+
+Burning-hands
+/fx breath-fire @{selected|token_id} @{target|Foe|token_id}
+!roll20AM --audio,play|fireblast
+
+Cure-wounds
+!roll20AM --audio,play|curelightwounds
+
+Produce-flame, firebolt, 
+/fx beam-fire @{selected|token_id} @{target|Foe|token_id}
+!roll20AM --audio,play|fireblast
+
+Moonbeam
+/fx burn-frost @{target|token_id}
+
+Sacred-flame
+/fx burn-holy @{target|token_id}
+!roll20AM --audio,play|fireblast
+
+Guiding-bolt
+/fx beam-holy @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play|psi1
+
+Witch-bolt
+/fx beam-death @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play|psi1
+
+Firebreath
+/fx breath-fire @{selected|token_id} @{target|Foe|token_id} 
+!roll20AM --audio,play|fireblast
+
+Cone-of-Cold or Dragon's Breath
+/fx breath-frost @{selected|token_id} @{target|Foe|token_id} 
