@@ -1,0 +1,87 @@
+fatality-blood
+
+/fx nova-blood @{selected|token_id}
+!token-mod --ids @{selected|token_id} --set statusmarkers|dead
+
+
+fatality-death
+
+/fx nova-death @{selected|token_id}
+!token-mod --ids @{selected|token_id} --set statusmarkers|dead
+
+
+fatality-slime
+
+/fx nova-slime @{selected|token_id}
+!token-mod --ids @{selected|token_id} --set statusmarkers|dead
+
+
+goo-burst
+
+/fx nova-death @{selected|token_id}
+
+
+Group Check
+
+!group-check {{
+--Dexterity Save
+--subheader vs DC ?{DC}
+--button ApplyDamage !apply-damage
+~dmg [[?{Damage}]]
+~type ?{Damage on Save|Half,half|None,none}
+~DC ?{DC}
+~saves RESULTS(,)
+~ids IDS(,)
+}}
+
+
+!group-check --whisper {{
+--?{Ability Save|Strength,Strength Save|Dexterity,Dexterity Save|Constitution,Constitution Save|Intelligence,Intelligence Save|Wisdom,Wisdom Save|Charisma,Charisma Save}
+--ro ?{Roll Type|Normal,roll1|Advantage,adv|Disadvantage,dis}
+--process
+--subheader vs DC ?{DC}
+--button ApplyDamage !apply-damage
+~dmg [[?{Damage|0}]]
+~type ?{Damage on Save|Half,half|None,none}
+~DC ?{DC}
+~saves RESULTS(,)
+~ids IDS(,)
+?{Status|
+None,~|
+Red,~status red|
+Blue,~status blue|
+Green,~status green|
+Orange,~status orange|
+Purple,~status purple|
+Pink,~status pink|
+Yellow,~status yellow|
+―, |
+Concentrating,~status blue|
+Readying,~status stopwatch|
+―, |
+Prone,~status back-pain|
+Restrained,~status fishing-net|
+Grappled,~status grab|
+―, |
+Incapacitated,~status interdiction|
+Stunned,~status pummeled|
+Unconscious,~status sleepy|
+―, |
+Charmed,~status chained-heart|
+Frightened,~status screaming|
+―, |
+Poisoned,~status half-heart|
+Blinded,~status bleeding-eye|
+Deafened,~status lightning-helix|
+Paralyzed,~status padlock|
+Petrified,~status broken-skull|
+―, |
+Dodging,~status bolt-shield|
+Cover (half),~status broken-shield:2|
+Cover (three-quarters),~status broken-shield:5|
+Cover (full),~status white-tower|
+Invisible,~status ninja-mask|
+―, }
+}}
+
+
