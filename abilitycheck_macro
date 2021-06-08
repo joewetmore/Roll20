@@ -1,0 +1,10 @@
+Abilitycheck
+
+@{selected|wtype}&{template:default} {{name=Ability Score for @{selected|character_name}}} {{?{Ability Score
+  | Strength, Strength +@{selected|strength_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|strength_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|strength_mod}@{selected|jack_bonus}]]
+  | Dexterity, Dexterity +@{selected|dexterity_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|dexterity_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|dexterity_mod}@{selected|jack_bonus}]]
+  | Constitution, Constitution +@{selected|constitution_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|constitution_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|constitution_mod}@{selected|jack_bonus}]]
+  | Intelligence, Intelligence +@{selected|intelligence_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|intelligence_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|intelligence_mod}@{selected|jack_bonus}]]
+  | Wisdom, Wisdom +@{selected|wisdom_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|wisdom_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|wisdom_mod}@{selected|jack_bonus}]]
+  | Charisma, Charisma +@{selected|charisma_mod}@{selected|jack_bonus}=[[@{selected|d20}+@{selected|charisma_mod}@{selected|jack_bonus}]] - [[@{selected|d20}+@{selected|charisma_mod}@{selected|jack_bonus}]]
+}}}
