@@ -1,0 +1,3 @@
+Shortrest
+
+&{template:default} {{name=Short Rest}} {{HP Restored=[[?{Spend up to @{selected|hit_dice} HD|0}d@{selected|hitdietype}+@{selected|constitution_mod}]]}} {{Activity=?{Activity|none}}}
