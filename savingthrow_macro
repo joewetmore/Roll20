@@ -1,0 +1,11 @@
+Savingthrow
+
+ 
+@{selected|wtype}&{template:default} {{name=Saving Throw for @{selected|character_name}}} {{?{Saving Throw
+  | Strength, Strength= [[@{selected|d20}+[[(@{selected|strength_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_str_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|strength_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_str_save}*@{selected|npc})]]]]
+  | Dexterity, Dexterity= [[@{selected|d20}+[[(@{selected|dexterity_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_dex_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|dexterity_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_dex_save}*@{selected|npc})]]]]
+  | Constitution, Constitution= [[@{selected|d20}+[[(@{selected|constitution_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_con_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|constitution_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_con_save}*@{selected|npc})]]]]
+  | Intelligence, Intelligence= [[@{selected|d20}+[[(@{selected|intelligence_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_int_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|intelligence_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_int_save}*@{selected|npc})]]]]
+  | Wisdom, Wisdom= [[@{selected|d20}+[[(@{selected|wisdom_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_wis_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|wisdom_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_wis_save}*@{selected|npc})]]]]
+  | Charisma, Charisma= [[@{selected|d20}+[[(@{selected|charisma_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_cha_save}*@{selected|npc})]]]] - [[@{selected|d20}+[[(@{selected|charisma_save_bonus}@{selected|pbd_safe}*(1-ceil((@{selected|npc})*0.1)))+(@{selected|npc_cha_save}*@{selected|npc})]]]]
+}}}
