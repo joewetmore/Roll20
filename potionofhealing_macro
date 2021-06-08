@@ -1,0 +1,8 @@
+Potionofhealing
+
+/em ?{Potion Type| 
+    Healing, used a **Healing Potion** and restored [[2d4+2]] hit points|
+    Greater Healing, used a **Greater Healing Potion** that restored [[4d4+4]] hit points|
+    Superior Healing, used a **Superior Healing Potion** that restored [[8d4+8]] hit points|
+    Supreme Healing, used a **Superior Healing Potion** that restored [[10d4+20]] hit points
+} to ?{Whom did you heal?}.
