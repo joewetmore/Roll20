@@ -1,0 +1,4 @@
+[x](https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f2/Frozen_Skrill_Defenders_of_Berk_3.gif)
+/fx beam-frost @{selected|token_id} @{target|Foe|token_id}
+!roll20AM --audio,play,nomenu|electric-shocks-screams
+@{Jinsin|wtype}&{template:atkdmg} {{rname=Electro Breath}} {{range=5 by 30 ft. bolt}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[2d6]]}} {{dmg1type=lightning}} {{save=1}} {{saveattr=Dexterity}} {{savedesc=half damage}} {{savedc=[[[[(@{constitution_mod}+8+@{PB})]][SAVE]]]}} {{desc=LIGHTNING BREATH! Jinsin inhales deeply and breathes forth a 5 by 30 ft. bolt of lightning! Each creature in the area of the exhalation must make a Dexterity saving throw. On a successful save the targets take half damage. A rest will be need to recharge}} {{charname=Jinsin}}
