@@ -1,0 +1,14 @@
+Uses the Fumbler API
+
+#CritMiss-Melee
+!fumble melee
+
+#CritMiss-Natural
+!fumble natural
+
+#CritMiss-Shooter
+!fumble shooter
+
+#CritMiss-Throw
+!fumble throw
+
