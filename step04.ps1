@@ -32,10 +32,6 @@ if ( -not (([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIden
 }
 
 
-#Add modules
-Import-Module activedirectory
-
-
 #Set the Log File Location
 $LogFile = "C:\AD_setup\logs\AD_setup.log"
 
@@ -157,9 +153,10 @@ else {
 
 Write-Log "Beginning STEP04a of AD_Setup"
 
-# Get the domain from step02
+# Get the domain definition from step02
 $domain = Get-Content C:\AD_setup\Domain.txt
 $domainname = Get-Content C:\AD_setup\DomainName.txt
+$tld = Get-Content C:\AD_setup\tld.txt
 $hostname = hostname
 
 Clear-Host
@@ -194,8 +191,8 @@ Write-Host "-----Applying security hardening---------------" -ForegroundColor Gr
 Write-Host "-----------------------------------------------" -ForegroundColor Green
 
 # TB-230 Security Hardening Notes and Procedures, SECTION 9.1.1, Spectre and Meltdown
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name "FeatureSettingsOverride" -PropertyType "DWORD" -Value 0
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name "FeatureSettingsOverrideMask" -PropertyType "DWORD" -Value 3
+#New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name "FeatureSettingsOverride" -PropertyType "DWORD" -Value 0
+#New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name "FeatureSettingsOverrideMask" -PropertyType "DWORD" -Value 3
 
 # TB-230 Security Hardening Notes and Procedures, SECTION 9.1.2, Mitigate CVE-2021-34527 Print Spooler
 # Addressed in step03a, New-GPLink -Name "Global - Printers: Print Spooler - Disable"
